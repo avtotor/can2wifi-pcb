@@ -25,17 +25,16 @@ UART. Targeted at **mass production via JLCPCB** (full PCBA).
 
 ## Architecture
 
-```
-OBD-II 12V ─[F1 PTC]─[TVS SMBJ24A]─[D2 SS56 revpol]─ +12V
-                                                       │
-                                          [U4 LM5164 buck 100V] → +5V
-                                                       │            │
-                                                  [U5 AMS1117] → +3V3
-                                                       │
-  USB-C ─[D4 USBLC6 ESD]─ D+/D- ─[U3 CH340C]─ UART0 ─ [U1 ESP32-S3]
-                                   DTR/RTS ─[Q1/Q2]─ EN / IO0
-                                                       │ GPIO21/20
-                                          [U2 TJA1051]─[L2 CMC]─[D3 TVS]─ CANH/CANL → OBD 6/14
+```mermaid
+flowchart TD
+    OBD["OBD-II 12V"] --> F1["F1 PTC"] --> TVS["TVS SMBJ24A"] --> D2["D2 SS56 rev-pol"] --> V12["+12V"]
+    V12 --> U4["U4 LM5164 buck 100V"] --> V5["+5V"]
+    V5 --> U5["U5 AMS1117"] --> V3["+3V3"]
+    V3 --> U1["U1 ESP32-S3"]
+    USB["USB-C"] --> D4["D4 USBLC6 ESD"] -->|D+/D-| U3["U3 CH340C"]
+    U3 -->|UART0| U1
+    U3 -->|DTR/RTS| Q["Q1/Q2"] -->|EN / IO0| U1
+    U1 -->|GPIO21/20| U2["U2 TJA1051"] --> L2["L2 CMC"] --> D3["D3 TVS"] --> CAN["CANH/CANL → OBD 6/14"]
 ```
 
 ## Signal map (from firmware)
