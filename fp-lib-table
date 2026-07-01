@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "can2wifi")(type "KiCad")(uri "C:/Users/opalm/Git/can2wifi-pcb/can2wifi.pretty")(options "")(descr "Project-local footprints (custom OBD-II J1962 connector)"))
+)

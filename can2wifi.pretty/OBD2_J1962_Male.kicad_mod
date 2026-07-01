@@ -1,0 +1,196 @@
+(footprint "OBD2_J1962_Male"
+  (version 20241229)
+  (generator "kicad-mcp")
+  (generator_version "9.0")
+  (layer "F.Cu")
+  (descr "OBD-II / SAE J1962 male, board-mount, THT, 16-pin (2x8). GENERIC layout — verify against the exact connector datasheet before fabrication.")
+  (tags "OBD2 J1962 connector automotive CAN")
+
+  (property "Reference" "REF**" (at 0 -8 0)
+    (layer "F.SilkS")
+    (uuid "62c08274-d124-428e-811f-d45fa35ac985")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (property "Value" "OBD2_J1962_Male" (at 0 8 0)
+    (layer "F.Fab")
+    (uuid "5d3898f2-3251-4e53-9885-21f0bc848d82")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (property "Datasheet" "" (at 0 0 0)
+    (layer "F.Fab")
+    (uuid "0554498e-6382-40c3-8b2b-20b2e65f5c42")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+
+  (fp_rect
+    (start -13.5 -6.5)
+    (end 13.5 6.5)
+    (stroke (width 0.05) (type default))
+    (fill none)
+    (layer "F.CrtYd")
+    (uuid "fc4725b2-6d60-4edd-b546-e4c0ea52844d")
+  )
+
+  (fp_rect
+    (start -13 -6)
+    (end 13 6)
+    (stroke (width 0.15) (type default))
+    (fill none)
+    (layer "F.SilkS")
+    (uuid "7d61582f-01c6-4d34-b4a4-ba73c7fad824")
+  )
+
+  (fp_rect
+    (start -12.5 -5.5)
+    (end 12.5 5.5)
+    (stroke (width 0.1) (type default))
+    (fill none)
+    (layer "F.Fab")
+    (uuid "4d316104-6455-49d9-a06d-2b831e07bbdd")
+  )
+
+  (pad "1" thru_hole rect
+    (at -7.7 -2.8)
+    (size 1.7 1.7)
+    (drill 1)
+    (layers "*.Cu" "*.Mask")
+    (uuid "091ee0b6-c7fd-4357-82a1-9459f8f877c7")
+  )
+
+  (pad "2" thru_hole circle
+    (at -5.5 -2.8)
+    (size 1.7 1.7)
+    (drill 1)
+    (layers "*.Cu" "*.Mask")
+    (uuid "93af422b-a30a-4c0c-9e68-8c2b68939dd6")
+  )
+
+  (pad "3" thru_hole circle
+    (at -3.3 -2.8)
+    (size 1.7 1.7)
+    (drill 1)
+    (layers "*.Cu" "*.Mask")
+    (uuid "02312c1e-3c8d-41c6-8ade-9c77e2779f17")
+  )
+
+  (pad "4" thru_hole circle
+    (at -1.1 -2.8)
+    (size 1.7 1.7)
+    (drill 1)
+    (layers "*.Cu" "*.Mask")
+    (uuid "93add915-b88a-4786-b549-ae49d6042422")
+  )
+
+  (pad "5" thru_hole circle
+    (at 1.1 -2.8)
+    (size 1.7 1.7)
+    (drill 1)
+    (layers "*.Cu" "*.Mask")
+    (uuid "36c4cec9-cc5b-47ce-aa04-c638b53c9061")
+  )
+
+  (pad "6" thru_hole circle
+    (at 3.3 -2.8)
+    (size 1.7 1.7)
+    (drill 1)
+    (layers "*.Cu" "*.Mask")
+    (uuid "890147fb-fa21-4b5c-925a-beba94da8d98")
+  )
+
+  (pad "7" thru_hole circle
+    (at 5.5 -2.8)
+    (size 1.7 1.7)
+    (drill 1)
+    (layers "*.Cu" "*.Mask")
+    (uuid "c934d006-e1a6-4ebd-a629-c683b19782c9")
+  )
+
+  (pad "8" thru_hole circle
+    (at 7.7 -2.8)
+    (size 1.7 1.7)
+    (drill 1)
+    (layers "*.Cu" "*.Mask")
+    (uuid "a464b427-817c-4199-8f6c-314423393ddd")
+  )
+
+  (pad "9" thru_hole circle
+    (at -7.7 2.8)
+    (size 1.7 1.7)
+    (drill 1)
+    (layers "*.Cu" "*.Mask")
+    (uuid "a0035374-d8d2-4b95-a089-2682fbd90499")
+  )
+
+  (pad "10" thru_hole circle
+    (at -5.5 2.8)
+    (size 1.7 1.7)
+    (drill 1)
+    (layers "*.Cu" "*.Mask")
+    (uuid "aed5d58e-ed1b-4bb0-9f2d-94245e3621a7")
+  )
+
+  (pad "11" thru_hole circle
+    (at -3.3 2.8)
+    (size 1.7 1.7)
+    (drill 1)
+    (layers "*.Cu" "*.Mask")
+    (uuid "9fa464a9-7496-48ee-9e84-33111686b47c")
+  )
+
+  (pad "12" thru_hole circle
+    (at -1.1 2.8)
+    (size 1.7 1.7)
+    (drill 1)
+    (layers "*.Cu" "*.Mask")
+    (uuid "1457f599-6658-431a-a0af-34351482f9c1")
+  )
+
+  (pad "13" thru_hole circle
+    (at 1.1 2.8)
+    (size 1.7 1.7)
+    (drill 1)
+    (layers "*.Cu" "*.Mask")
+    (uuid "f631a1bb-788f-4cb7-bd70-b6ee40bef0a3")
+  )
+
+  (pad "14" thru_hole circle
+    (at 3.3 2.8)
+    (size 1.7 1.7)
+    (drill 1)
+    (layers "*.Cu" "*.Mask")
+    (uuid "a224fdb1-6897-41ce-a9f7-0b6b69b8db54")
+  )
+
+  (pad "15" thru_hole circle
+    (at 5.5 2.8)
+    (size 1.7 1.7)
+    (drill 1)
+    (layers "*.Cu" "*.Mask")
+    (uuid "4ad1851a-94bb-492d-983e-e25bb0befb3b")
+  )
+
+  (pad "16" thru_hole circle
+    (at 7.7 2.8)
+    (size 1.7 1.7)
+    (drill 1)
+    (layers "*.Cu" "*.Mask")
+    (uuid "621b4827-d19c-481f-9b36-6cfe6bd026db")
+  )
+
+  (pad "" np_thru_hole circle
+    (at -11.5 0)
+    (size 2.6 2.6)
+    (drill 2.6)
+    (layers "*.Cu" "*.Mask")
+    (uuid "0f135b9f-a48e-4103-b31c-e0cb88b0e152")
+  )
+
+  (pad "" np_thru_hole circle
+    (at 11.5 0)
+    (size 2.6 2.6)
+    (drill 2.6)
+    (layers "*.Cu" "*.Mask")
+    (uuid "9026311c-6546-4346-b314-f186ee2f0648")
+  )
+
+)
